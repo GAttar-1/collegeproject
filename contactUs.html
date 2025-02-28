@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="contact" content="contact us">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Gabe Attar">
+
+    <title>Contact Us</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BBK1R2H2HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BBK1R2H2HE');
+</script>
+<body>
+
+    <header>
+        <nav>
+            <table width="100%" border="1">
+                <tr>
+                    <td align="center"><a href="index.html">Home</a></td>
+                    <td align="center"><a href="aboutUs.html">About Us</a></td>
+                    <td align="center"><a href="team.html">Team Members</a></td>
+                    <td align="center"><a href="contactUs.html">Contact</a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <h1>Contact Us</h1>
+
+    <!-- Image added here -->
+    <img src="images/Screenshot 2025-02-03 152635.png" alt="archery logo" width="300">
+
+    <form action="submit_form.php" method="post">
+        <table>
+            <tr>
+                <td><label for="fullName">Full Name:</label></td>
+                <td><input type="text" id="fullName" name="fullName" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="question">Question:</label></td>
+                <td><input type="text" id="question" name="question" required></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message:</label></td>
+                <td><textarea id="message" name="message" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to our newsletter</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <footer>
+        <p>Copyright, All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
