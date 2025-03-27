@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Collegiate Archery Home</title>
+    <link rel="icon" type="image/x-icon" href="/images/Screenshot 2025-02-03 152635.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #fdf0d5;
+      }
+    </style>  
+  </head>
+  
+  <!--Header-->
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto relative flex items-center justify-center px-50 py-4">
+        <!-- Logo on the left -->
+        <a href="index.html" class="absolute left-0 flex items-center space-x-3">
+            <img src="/images/Screenshot 2025-02-03 152635.png" alt="Archery Logo" class="h-12 w-auto">
+        </a>
+  
+        <!-- Navigation Links in the center -->
+        <ul class="flex space-x-8 text-lg font-medium text-gray-700">
+            <li><a href="index.html" class="hover:text-blue-500 transition">Home</a></li>
+            <li><a href="aboutUs.html" class="hover:text-blue-500 transition">About Us</a></li>
+            <li><a href="team.html" class="hover:text-blue-500 transition">Team</a></li>
+            <li><a href="contactUs.html" class="hover:text-blue-500 transition">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <body>
+
+    <!-- Title Section -->
+    <div class="text-center my-12">
+      <h1 class="underline text-6xl font-bold text-red-500">About Us</h1>
+    </div>
+
+    <!-- About Us Content Section -->
+    <div class="container mx-auto flex justify-between items-start px-4 py-8">
+      <!-- Image on the Left -->
+      <div class="h-1/3 w-auto">
+        <img src="/images/scale.png" alt="Scale image weights" class="w-full h-auto border-8 border-red-600 rounded-lg shadow-lg">
+      </div>
+
+      <!-- Content on the Right -->
+      <div class="w-3/4 h-200">
+        <h2 class="underline text-4xl pl-20 font-bold text-slate-700 mb-4">History, Mission, Values</h2>
+        <p class="text-lg text-gray-700 pl-20 mr-40 leading-relaxed">
+          Our organization was started in 2020 as a way to unite college students who are interested in the 
+          sport of archery. Originally, it was held remotely at the University of South Carolina through 
+          zoom calls meant to discuss archery and build a community of those who are passionate about the 
+          sport. Over time though as things opened up we started to meet at our school physically and practice 
+          the sport. We started to host our own competitions and participate in local ones in the city of Columbia. 
+          Now we are chapter-based and operate in many other universities across the South East, we eagerly look forward 
+          to anyone who wants to join, whether they are a master at archery or have never picked up a bow, everyone is welcome! 
+          Our mission is to educate those on the sport of archery and foster a community of those who love the sport. Our 
+          top value is to include everyone who walks through our doors, we discriminate against no one and treat everyone as 
+          equal. 
+        </p>
+      </div>
+    </div>
+
+    <!-- Leadership Section -->
+    <div class="container mx-auto flex justify-between items-start px-4 py-8 mt-12 rounded-lg">
+      <!-- Leadership Text on the Left -->
+      <div class="w-2/3">
+        <h2 class="underline text-4xl pl-20 font-bold text-gray-800 mb-4">Leadership</h2>
+        <p class="text-lg ml-20 mr-40 text-gray-700 leading-relaxed">
+          Our national president is headed by Gabriel (me) and vice-president Jack. We are the first two members who originally had the idea for a club dedicated to college students interested in archery. We have now grown to a fairly large organization with around 2500 members. We also have a treasurer, Mia, who helps manage our finances and fundraising efforts. Together, we have helped charter several clubs throughout a number of universities and recruit members to our own local chapter here at the University of South Carolina. As those in a leadership position, we actively try to hear from everyone who has any good ideas about our organization, so if you have something you would like to tell us or suggest, we personally check all form submissions, so feel free to reach out! 
+        </p>
+      </div>
+
+      <!-- Image on the Right -->
+      <div class="w-1/3">
+        <a href="#">
+          <img src="/images/gabe.png" alt="Gabe Club President" style="border: 8px solid red; border-radius: 8px;" class="w-full h-auto rounded-lg shadow-lg cursor-pointer">
+        </a>
+      </div>
+    </div>
+  </body>
+
+<!-- Slideshow -->
+<div class="slideshow-container relative w-4/5 mx-auto">
+  <div class="slide active">
+      <div class="numbertext absolute bottom-2 right-4 text-white text-sm">1 / 3</div>
+      <img src="/images/Screenshot 2025-02-10 151538.png" alt="Archers" class="mt-3 h-80 w-400 border-3 border-solid
+       border-red-800 rounded-2xl shadow-lg object-fill">
+      <div class="text">Archers</div>
+  </div>
+  <div class="slide">
+      <div class="numbertext absolute bottom-2 right-4 text-white text-sm">2 / 3</div>
+      <img src="/images/target1.jpg" alt="Target 2" class="mt-3 h-100 w-350 rounded-2xl shadow-lg object-fill">
+      <div class="text">Target Two</div>
+  </div>
+  <div class="slide">
+      <div class="numbertext absolute bottom-2 right-4 text-white text-sm">3 / 3</div>
+      <img src="/images/target2.jpg" alt="Target 3" class="mt-3 h-100 w-350 rounded-2xl shadow-lg object-fill">
+      <div class="text">Target Three</div>
+  </div>
+  
+  <button onclick="prevSlide()" class="prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full shadow-lg hover:bg-gray-600 hover:scale-110 transition duration-300">❮</button>
+  <button onclick="nextSlide()" class="next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full shadow-lg hover:bg-gray-600 hover:scale-110 transition duration-300">❯</button>
+</div>
+
+<div style="text-align:center">
+  <span class="dot cursor-pointer hover:bg-gray-500 transition duration-300" onclick="currentSlide(0)"></span>
+  <span class="dot cursor-pointer hover:bg-gray-500 transition duration-300" onclick="currentSlide(1)"></span>
+  <span class="dot cursor-pointer hover:bg-gray-500 transition duration-300" onclick="currentSlide(2)"></span>
+</div>
+
+<script>
+  let currentSlideIndex = 0;
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+
+  function showSlide(index) {
+      slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === index);
+      });
+      dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === index);
+      });
+  }
+
+  function nextSlide() {
+      currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+      showSlide(currentSlideIndex);
+  }
+
+  function prevSlide() {
+      currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+      showSlide(currentSlideIndex);
+  }
+
+  function currentSlide(index) {
+      currentSlideIndex = index;
+      showSlide(currentSlideIndex);
+  }
+
+  // Auto-scroll functionality
+  setInterval(() => {
+      nextSlide();
+  }, 8000); // Change slide every 8 seconds
+</script>
+
+<style>
+  .slideshow-container {
+      position: relative;
+      width: 100%;
+      max-width: 800px; /* Optional: Limit the maximum width */
+      margin: auto;
+      overflow: hidden; /* Hide slides that are off-screen */
+  }
+
+  .slide {
+      display: none; /* Hide all slides by default */
+      width: 100%; /* Ensure slides take up the full container width */
+  }
+
+  .slide.active {
+      display: block; /* Show the active slide */
+  }
+
+  .slide img {
+      width: 100%; /* Ensure images scale to fit the slide */
+      height: auto; /* Maintain aspect ratio */
+      border: 5px solid #000; /* Black border */
+      border-radius: 10px; /* Optional: Rounded corners */
+  }
+
+  .numbertext {
+      position: absolute;
+      bottom: 2px;
+      right: 4px;
+      color: white;
+      font-size: 14px;
+  }
+
+  .text {
+      color: white;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+  }
+
+  .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+      background-color: #717171;
+  }
+</style>
+
+
+  <footer class="bg-sky-600 text-white text-left mt-auto flex justify-between items-center p-4">
+    <!-- Copyright Text on the Left -->
+    <p>Copyright 2025</p>
+
+    <!-- Image on the Right -->
+    <img src="/images/socials.png" alt="Social media links" class="h-8 w-32 bg-contain bg-no-repeat">
+  </footer>
+</html>
