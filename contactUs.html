@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Collegiate Archery Home</title>
+    <link rel="icon" type="image/x-icon" href="images/target.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #fdf0d5; 
+    }
+  </style>  
+  </head>
+  
+  <!--Header-->
+  <header class="bg-white shadow-md">
+    <nav class="container mx-auto relative flex items-center justify-center px-50 py-4">
+        <!-- Logo on the left -->
+        <a href="index.html" class="absolute left-0 flex items-center space-x-3">
+            <img src="images/Screenshot 2025-02-03 152635.png" alt="Archery Logo" class="h-12 w-auto">
+        </a>
+  
+        <!-- Navigation Links in the center -->
+        <ul class="flex space-x-8 text-lg font-medium text-gray-700">
+            <li><a href="index.html" class="hover:text-blue-500 transition">Home</a></li>
+            <li><a href="aboutUs.html" class="hover:text-blue-500 transition">About Us</a></li>
+            <li><a href="team.html" class="hover:text-blue-500 transition">Team</a></li>
+            <li><a href="contactUs.html" class="hover:text-blue-500 transition">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+</head>
+
+<!-- Contact Form -->
+<body>
+    <div class="flex justify-center items-center min-h-screen pb-20 p-4">
+      <!-- Left Section: Image, h1, and h2 -->
+      <div class="flex flex-col items-start pb-20 mr-8">
+        <h1 class="text-5xl text-red-500 pl-20 ml-5 underline font-bold">Contact Us</h1>
+        <h2 class="text-3xl font-bold text-gray-800 mt-3">We would love to hear from you!</h2>
+        <img src="images/target.png" alt="Archery Logo" class="ml-10 pl-20 h-40 w-auto mt-8">
+      </div>
+  
+      <!-- Right Section: Contact Form -->
+      <div class="bg-white shadow-lg rounded-lg p-10 mb-20 w-full max-w-md">
+        <h2 class="text-2xl font-bold text-center text-gray-800">Contact Form</h2>
+        <p class="text-center text-gray-600 mt-2">We will contact you back in 1-3 days</p>
+  
+        <form class="mt-6 space-y-4">
+          <!-- First Name -->
+          <div>
+            <label for="first-name" class="block text-lg text-gray-700">First Name</label>
+            <input type="text" id="first-name" name="first-name" class="w-full p-2 border border-gray-300 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          </div>
+  
+          <!-- Questions and/or Suggestions -->
+          <div>
+            <label for="questions" class="block text-lg text-gray-700">Questions and/or Suggestions</label>
+            <textarea id="questions" name="questions" class="w-full p-2 border border-gray-300 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4" required></textarea>
+          </div>
+  
+          <!-- Newsletter Checkbox -->
+          <div class="flex items-center">
+            <input type="checkbox" id="newsletter" name="newsletter" class="h-5 w-5 text-blue-500 rounded border-gray-300 focus:ring-2 focus:ring-blue-500">
+            <label for="newsletter" class="ml-2 text-gray-700 text-lg">Join our newsletter</label>
+          </div>
+  
+          <!-- Submit Button -->
+          <button type="submit" class="w-full bg-black text-white py-2 rounded-lg mt-4 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-black">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+<footer class="bg-sky-600 text-white text-left mt-auto flex justify-between items-center p-4">
+    <!-- Copyright Text on the Left -->
+    <p>Copyright 2025</p>
+  
+    <!-- Image on the Right -->
+    <img src="images/socials.png" class='h-8 w-32 bg-contain bg-no-repeat'>
+  </footer>
+
+</html>
